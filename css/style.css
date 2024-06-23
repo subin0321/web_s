@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 16px;
+}
+.search img{
+    margin-top: 20px;
+    padding-left: 10px; 
+    height: 20px;
+    width:20px;
+}
+
+.event-banner {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+   
+}
+
+.scroll-container {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.event-item {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 50px;
+    background-color: #ccc;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 8px;
+}
+
+.categories {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.category {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.category h2 {
+    margin-bottom: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.thum_img{
+    width: 160px;
+    height: 150px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 8px;
+}
+
+.title {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word; 
+    max-width: 150px; 
+}
+
+.content {
+    margin-top: 2px;
+    font-size: 14px;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-header {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    background-color: #f4f4f4;
+}
+
+.portfolio-header .thumbnail img {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 8px;
+}
+
+.portfolio-info {
+    flex: 1;
+}
+
+.portfolio-info h1 {
+    margin-top: 0;
+}
+
+.portfolio-info button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e93f5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-content {
+    padding: 20px;
+}
+
+.portfolio-images img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.portfolio-description {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .thumbnails {
+        justify-content: center;
+    }
+
+    .thumbnail-container {
+        width: calc(50% - 10px);
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .thumbnail-container {
+        width: calc(100% - 10px);
+        margin-bottom: 10px;
+    }
+}
+
+.reservation-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.reservation-form h2 {
+    text-align: center;
+}
+
+.reservation-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.reservation-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color:#e93f5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#confirmationMessage {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+    text-align: center;
+}
